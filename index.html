@@ -1,32 +1,403 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>Portfolio</title>
+
+    <!--links CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Link de CSS-->
+    <link rel="stylesheet" href="Estilo_Portfolio.css">
 </head>
 <body>
-    <div class="container">
-        <h1>¡Bienvenido a Mi Portfolio!</h1>
-        <p>Esto es una página de prueba.</p>
+    
+
+
+    <!-- Menu de cabeza-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">TomBlack</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">HABILIDADES</a></li>
+                    <li><a href="#Curriculum">CURRICULUM</a></li>
+                    <li><a href="#portfolio">PROYECTOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    
+        </header>
+    
     </div>
+
+    <!--Seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-imagen">
+                <img src="IMG/Logo Gamer Circular Moderno Verde y Negro.png" alt="">
+            </div>
+            <h1>Diego Contreras</h1>
+            <h2>Ingeniero en informatica</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-reddit"></i></a>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Seccion Sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Hola me llamo <span>Diego Contreras</span>naci en Chile y tengo pasion por 
+            toda el area de la tecnologia, en tiempos libre me gusta estar en mi pc probando 
+            cosas o jugando videojuegos, tambien me gusta ir al cine, probar gastronomia fuera de 
+            lo cotidiano, o la que no falta una parrillada.</p>
+
+
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                        <ul>
+                            <li>
+                                <strong> Dirección: </strong>
+                                Santiago, Chile
+                            </li>
+                            <li>
+                                <strong>Cumpleaños: </strong>
+                                30-10-97
+                            </li>
+                            <li>
+                                <strong>Celular: </strong>
+                                +56 9 64409343
+                            </li>
+                            <li>
+                                <strong>Email: </strong>
+                                contreras.isma2021@gmail.com
+                            </li>
+                            <li>
+                                <strong>Cargo: </strong>
+                                <span>Freelance </span>
+                            </li>
+                        </ul>
+                </div>
+            
+
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Desarrollo</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>Series</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Peliculas</span>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+
+
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <!--Seccion de skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Tecnicas de skills-->
+                    <div class="col">
+                        <h3>Habilidades Técnicas</h3>
+                        <!--Cada Skill asignado en esta seccion
+                        Skill 1-->
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span>30%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Skill 2-->
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso Python">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Skill 3-->
+                        <div class="skill">
+                            <span>HTML y CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso HTML">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Skill 5-->
+                        <div class="skill">
+                            <span>Java</span>
+                            <div class="barra-skill">
+                                <div class="progreso java">
+                                    <span>20%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Skill 6-->
+                        <div class="skill">
+                            <span>PHP</span>
+                            <div class="barra-skill">
+                                <div class="progreso PHP">
+                                    <span>45%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Skill 7-->
+                        <div class="skill">
+                            <span>Blueprints</span>
+                            <div class="barra-skill">
+                                <div class="progreso Blueprints">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="skill">
+                            <span>Django</span>
+                            <div class="barra-skill">
+                                <div class="progreso Django">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!--Profesional Skills-->
+                    <div class="col">
+                        <h3>Habilidades Profesionales</h3>
+                        <!--Skill 1-->
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso comunicacion">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Skill 2-->
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso Team-Work">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Skill 3-->
+                        <div class="skill">
+                            <span>Trabajo Bajo presión</span>
+                            <div class="barra-skill">
+                                <div class="progreso Presion">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Seccion CV-->
+    <!-- POSIBLEMENTE SE PUEDE MODIFICAR O CAMBIAR PARA MEJOR VISTA-->
+    <seccion id="Curriculum" class="Curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col-izquierda">
+                    <h3>Educación</h3>
+                    <div class="item">
+                        <!--Dupliacr esta seccion si quieres agregar mas cositas-->
+                        <h4>Ingenieria en Informática</h4>
+                        <span class="casa">Sede Duoc UC</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p>Estudios generales del desarrollo de software, planificación de proyectos,
+                            desarrollo Web y otros requisitos de la carrera.
+                        </p>
+
+                    </div>
+                    <div class="item">
+                        <h4>Eduación Básica y media</h4>
+                        <span class="casa">King's School San Bernardo</span>
+                        <span class="fecha">2004 - 2016</span>
+                        <p>Educación Básica y media completa en el Colegio</p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <!--Duplicar esta seccion si se quiere agregar mas cositas !!-->
+                    <div class="item">
+                        <h4>PROFESIONAL DE LA UNIDAD DE CALIDAD Y SEGURIDAD DE PRODUCTOS.</h4>
+                        <span class="casa">Empresa Sernac</span>
+                        <span class="fecha">Junio 2018 - Agosto 2022</span>
+                        <p>Gestión de alertas de seguridad para notificar de desperfectos
+                            que tienen algunos en productos y verificación de datos.
+
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h4>Practica Profesional De desarrollo Web Duoc UC Ivaras</h4>
+                        <span class="casa">Duoc UC Sede Antonio Varas</span>
+                        <span class="fecha">Abril 2022 - Julio 2022</span>
+                        <p>Desarrollo en web con lenguajes como HTML, CSS, JS, PHP, con la herramienta Netbeans
+                            , con implementación de framework GlassFish en  linux y para la base de datos MySQL.
+                        </p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!--Duplicar esta seccion si se quiere agregar mas cositas !!-->
+                    <div class="item">
+                        <h4>Junior Game Develop en Unreal Engine 5</h4>
+                        <span class="casa">Arcadius Entertaiment LLC ,USA</span>
+                        <span class="fecha">Octubre 2022 - Octubre 2023</span>
+                        <p> Creación de mecanicas e implementarlas en el juego que se estaba desarrollando,
+                            junto con trabajo de la IA de los NPC utilizando lenguaje de programacion a la vista
+                            (Blueprints) Constante trabajo bajo presion para poder cumplir metas establecidas.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+    </seccion>
+
+
+    <seccion id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="Galeria">
+                <!--Duplicar los proyectos realizados y en procesos-->
+                <div class="Proyecto">
+                    <a href="https://youtu.be/RWTkvWIckbQ" alt="The lost Ball">
+                        <img src="IMG/Lost Ball.png" alt="un juego">
+                    </a>
+                    <h3>The lost Ball</h3>
+                    <p>Avanzar hasta el siguiente nivel si que los obstaculos te saquen del mapa.</p>
+                </div>
+               
+                <div class="Proyecto">
+                    <a href="https://youtu.be/Dgzg5aRGTlk" alt="ciudad CyberPunk">
+                        <img src="IMG/Seleccionado CyberPunk.png" >
+                    </a>
+                    <h3>CyberPunk City</h3>
+                    <p>Pequeño proyecto de ciudad con temática de CyberPunk</p>
+                </div>
+                <div class="Proyecto">
+                    <a href="https://youtu.be/ID8gs6X-wJI">
+                        <img src="IMG/JUEGO RTS.png" alt="">
+                    </a>
+                    <h3>(En Desarrollo)</h3>
+                    <p>Game RTS juego con vista de arriba en donde se construye y recolecta recursos, aun en desarrollo.
+                    </p>
+                </div>
+                <div class="Proyecto">
+                    <img src="IMG/pixel 2d.png" alt="">
+                    <h3>(En Desarrollo)</h3>
+                    <p>Juego en pixel 2D con la finalidad de llegar hasa el final del nivel derrotando la mayor cantidad posible de enemigos (Sin Video)</p>
+                </div>
+                <div class="Proyecto">
+                    <img src="IMG/img noxfor.png" alt="">
+                    <h3>(En Desarrollo)</h3>
+                    <p>Juego de terror centrado en un operario de bodega que tiene 
+                        que hacer un turno de noche y empieza a sucederle cosas fuera 
+                        de lo común. (Sin video)
+
+                    </p>
+                </div>
+               
+
+            </div>
+        </div>
+    </seccion>
+
+
+    <!--Seccion de Contacto-->
+    <seccion id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número Celular">
+                    <input type="text" placeholder="Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </seccion>
+
+
+
+   
+
+    
 </body>
 </html>
